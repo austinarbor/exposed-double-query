@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    default: local
+  threads:
+    virtual:
+      enabled: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/exposed_dev
+  exposed:
+    generate-ddl: false
+    show-sql: true
+
+logging:
+  level:
+    Exposed: DEBUG
